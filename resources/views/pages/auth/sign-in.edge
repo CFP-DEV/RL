@@ -1,0 +1,41 @@
+@layout('templates.auth')
+
+@section('cta')
+
+<nav class="auth-navigation">
+    <span class="auth-navigation__question">
+        Don't have an account?
+    </span>
+    <a href="/auth/sign-up" class="auth-navigation__btn btn btn--is-large btn--is-red">
+        Sign Up
+    </a>
+</nav>
+
+@endsection
+
+@section('content')
+
+<header class="auth-header">
+    <h1 class="auth-header__title">
+        Sign In
+    </h1>
+    <h2 class="auth-header__subtitle">
+        Access your account.
+    </h2>
+</header>
+
+<form class="auth-form form">
+    <div class="form__group">
+        <label for="login" class="form__label">
+            Login
+        </label>
+        <input type="text" class="form__input" id="login" name="login">
+    </div>
+    <div class="form__group">
+        <button type="submit" class="btn--is-large btn--is-red">
+            Sign In
+        </button>
+    </div>
+</form>
+
+@endsection

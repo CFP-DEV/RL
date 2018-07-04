@@ -4,7 +4,7 @@ const edge = require('edge.js')
 
 // Home
 router.get('/', (req, res) => {
-    res.send(edge.render('welcome'));
+    res.send(edge.render('pages.auth.sign-in'));
 });
 
 // Auth
