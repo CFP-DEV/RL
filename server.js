@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const app = express();
 
@@ -5,4 +6,7 @@ const app = express();
 app.use('/', require('./routes/routes.js'));
 
 // Listen
-app.listen(3000, () => console.log('express server started at port 300'));
+app.listen(process.env.PORT, () => {
+    // Message
+    console.log(`Listening on PORT: ${process.env.PORT}`);
+});
