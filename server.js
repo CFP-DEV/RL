@@ -4,6 +4,9 @@ const app = express();
 const path = require('path');
 const edge = require('edge.js')
 
+// Static Files (Public)
+app.use(express.static('./public'))
+
 // Template Engine
 edge.registerViews(path.join(__dirname, './resources/views'))
 
