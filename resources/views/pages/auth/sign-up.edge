@@ -6,8 +6,8 @@
     <span class="auth-navigation__question">
         Don't have an account?
     </span>
-    <a href="/auth/sign-up" class="auth-navigation__btn btn btn--is-large btn--is-red">
-        Sign Up
+    <a href="/auth/sign-in" class="auth-navigation__btn btn btn--is-large btn--is-red">
+        Sign In
     </a>
 </nav>
 
@@ -19,10 +19,10 @@
     <!-- Header -->
     <header class="auth-header col-xs-12 col-sm-6 col-sm-offset-3">
         <h1 class="auth-header__title">
-            Sign In
+            Sign Up
         </h1>
         <h2 class="auth-header__subtitle">
-            Access your account.
+            Create new account.
         </h2>
     </header>
 
@@ -36,6 +36,14 @@
             <input type="text" class="form__input" id="login" name="login">
         </div>
 
+        <!-- Login -->
+        <div class="form__group">
+            <label for="email" class="form__label">
+                E-mail
+            </label>
+            <input type="email" class="form__input" id="email" name="email">
+        </div>
+
         <!-- Password -->
         <div class="form__group">
             <label for="password" class="form__label">
@@ -44,9 +52,17 @@
             <input type="password" class="form__input" id="password" name="password">
         </div>
 
+        <!-- Password -->
+        <div class="form__group">
+            <label for="passwordConfirm" class="form__label">
+                Confirm Password
+            </label>
+            <input type="password" class="form__input" id="passwordConfirm" name="passwordConfirm">
+        </div>
+
         <div class="form__group">
             <button type="submit" class="btn btn--is-large btn--is-red">
-                Sign In
+                Sign Up
             </button>
         </div>
     </form>

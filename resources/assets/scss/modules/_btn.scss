@@ -1,0 +1,47 @@
+.btn {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font: inherit;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    border-radius: $radius;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.btn--is-large {
+    height: 60px;
+    width: auto;
+    padding: 0 20px;
+}
+
+.btn--is-red {
+    background: $red;
+
+    &:hover {
+        background: $red-hover;
+    }
+}
+
+.btn--is-blue {
+    background: $blue;
+
+    &:hover {
+        background: $blue-hover;
+    }
+}
+
+.btn--is-yellow {
+    background: $yellow;
+
+    &:hover {
+        background: $yellow-hover
+    }
+}
