@@ -2,7 +2,8 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 const path = require('path');
-const edge = require('edge.js')
+const edge = require('edge.js');
+const database = require(path.join(__dirname, './config/database.js'))
 
 // Static Files (Public)
 app.use(express.static('./public'))

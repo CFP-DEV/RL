@@ -1,6 +1,9 @@
 const express = require('express');
 const router = express.Router();
 const edge = require('edge.js')
+const path = require('path');
+
+// Controllers
 
 // Auth
 router.get('/auth/sign-in', (req, res) => {
@@ -13,8 +16,11 @@ router.get('/auth/sign-up', (req, res) => {
 
 // Home
 router.get('/', (req, res) => {
-    res.send('Auth');
+    res.send(edge.render('pages.home.home'));
 });
 
+router.get('/game', (req, res) => {
+    res.send(edge.render('pages.game.game'));
+});
 
 module.exports = router;

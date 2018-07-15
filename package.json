@@ -9,13 +9,21 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bookshelf": "^0.13.3",
     "dotenv": "^6.0.0",
     "edge.js": "^1.1.4",
     "express": "^4.16.3",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-sass": "^4.0.1",
+    "knex": "^0.15.0",
+    "mysql": "^2.15.0",
+    "mysql2": "^1.5.3",
     "nodemon": "^1.17.5",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "sequelize": "^4.38.0"
+  },
+  "devDependencies": {
+    "gulp-watch": "^5.0.0"
   }
 }
